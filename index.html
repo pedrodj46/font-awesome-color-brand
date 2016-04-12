@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
   	<meta charset="utf-8">
@@ -10,12 +10,1206 @@
 	  <meta name="theme-color" content="#ffaf47">
 	  <!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<!-- Font Awesome -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Color Brand -->
+    <link rel="stylesheet" href="css/font-awesome-color-brand.css">
+    <style>
+      body{font-family:'Open Sans',sans-serif;font-size:1.6rem;}header{background:#009688;color:#ffffff;padding-top:3rem;padding-bottom:4rem;margin-bottom:2rem;}header p{margin-top:2rem;font-size:1.8rem;}header .button{margin-top:2.5rem;}header .button .btn-group, header .button .btn{margin-left:2rem;margin-right:2rem;font-size:1.5rem;}.icon{margin-top:3rem;}.color{margin-top:1.5rem;margin-bottom:2rem;}footer{color:#ffffff;background:#009688;margin-top:9rem;padding-top:4rem;padding-bottom:4rem;word-spacing:0.2rem;}footer a{color:#ffffff;}footer a:hover{color:#000000;}table{margin-top:3rem;}table p{margin-top:1rem;margin-bottom:1rem;}.text{margin-top:2rem;}h1{font-size:4.2rem;}h3{font-size:3rem;}section{margin-top:1.5rem;}section ol li{margin-top:3rem;font-size:1.8rem;}ol li .more, ol li .code{margin-top:1.1rem;}ol li .type-file{margin-top:1.5rem;margin-bottom:0.5rem;}ol li h4{font-size:2rem;font-weight:700;margin-bottom:0;}ol li .text{margin-top:1rem;}
+    </style>
   </head>
   <body>
     
-  	
+  	<header class="text-center">
+      <div class="container">
+        <h1>Font Awesome Color Brand</h1>
+        <p>
+          A list of brand color in SCSS and CSS for Font Awesome or for what you want!
+        </p>
+        <div class="button">
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-download"></i> Download
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="https://raw.githubusercontent.com/downloads/pedrodj46/font-awesome-color-brand/gh-pages/sass/font-awesome-color-brand.scss" download="font-awesome-color-brand.scss">
+                  SCSS
+                </a>
+              </li>
+              <li>
+                <a href="https://raw.githubusercontent.com/downloads/pedrodj46/font-awesome-color-brand/gh-pages/css/font-awesome-color-brand.css" download="font-awesome-color-brand.css">
+                  CSS
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a href="https://github.com/pedrodj46/font-awesome-color-brand" class="btn btn-default btn-github">
+            <i class="fa fa-github"></i> View on Github
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <h3>Get Started</h3>
+        <ol>
+          <li>
+            Import Font Awesome in your code, into the tag <code>&lt;head&gt;</code>:
+            <div class="code">
+              <code>
+                <span class="edge">&lt;link</span> <span class="windows">rel=</span>"stylesheet" <span class="windows">href=</span>"https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"<span class="edge">&gt;</span>
+              </code>
+            </div>
+            <div class="more">
+              More information at official website of <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a>.
+            </div>
+          </li>
+          <li>
+            Import Font Awesome Color Brand in SCSS or CSS.
+            <div class="row">
+              <div class="col-xs-12 type-file">
+                <h4>SCSS</h4>
+                <div class="text">
+                  Import the SCSS file in your project:
+                </div>
+                <div class="code">
+                  <code>
+                    <span class="edge">@import</span> 'path/font-awesome-color-brand'
+                  </code>
+                </div>
+                <div class="text">
+                  You can use the class directly in the HTML file or the variable color for your SCSS project.
+                </div>
+              </div>
+              <div class="col-xs-12 type-file">
+                <h4>CSS</h4>
+                <div class="text">
+                  Import the CSS file in your project with the <code>@import</code>:
+                </div>
+                <div class="code">
+                  <code>
+                    <span class="edge">@import</span> <span class="windows">url</span>('path/font-awesome-color-brand.css');
+                  </code>
+                </div>
+                <div class="text">
+                  or with the <code>&lt;link&gt;</code> tag:
+                </div>
+                <div class="code">
+                  <code>
+                    <span class="edge">&lt;link</span> <span class="windows">type=</span>"stylesheet" <span class="windows">href=</span>"path/font-awesome-color-brand.css"<span class="edge">&gt;</span>
+                  </code>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            Yeah, let's start to color your icon!
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Example</h3>
+          </div>
+          <div class="col-md-10 col-md-offset-1 col-xs-12 text-center">
+            <table class="table text-center">
+              <tr>
+                <td></td>
+                <td>
+                  <p>
+                    Result
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    Code
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="text">
+                    Font Awesome
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <i class="fa fa-github fa-3x"></i>
+                  </p>
+                </td>
+                <td>
+                  <p class="text">
+                    <code>
+                      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-github"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                    </code>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="text">
+                    Font Awesome + Color Brand
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <i class="fa fa-github fa-3x github"></i>
+                  </p>
+                </td>
+                <td>
+                  <p class="text">
+                    <code>
+                      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-github github"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                    </code>
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <div class="col-md-4">
+              
+            </div>
+            <div class="col-md-4">
+              
+            </div>
+            <div class="col-md-4">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>List of colors</h3>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-500px fa-3x a500px"></i>
+            </div>
+            <div class="color">
+              <code>a500px</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-adn fa-3x adn"></i>
+            </div>
+            <div class="color">
+              <code>adn</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-amazon fa-3x amazon"></i>
+            </div>
+            <div class="color">
+              <code>amazon</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-cc-amex fa-3x american-express"></i>
+            </div>
+            <div class="color">
+              <code>american-express</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-android fa-3x android"></i>
+            </div>
+            <div class="color">
+              <code>android</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-angellist fa-3x angel-list"></i>
+            </div>
+            <div class="color">
+              <code>angel-list</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-apple fa-3x apple"></i>
+            </div>
+            <div class="color">
+              <code>apple</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-behance fa-3x behance"></i>
+            </div>
+            <div class="color">
+              <code>behance</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-bitbucket fa-3x bitbucket"></i>
+            </div>
+            <div class="color">
+              <code>bitbucket</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-bitcoin fa-3x bitcoin"></i>
+            </div>
+            <div class="color">
+              <code>bitcoin</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-black-tie fa-3x black-tie"></i>
+            </div>
+            <div class="color">
+              <code>black-tie</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-bluetooth fa-3x bluetooth"></i>
+            </div>
+            <div class="color">
+              <code>bluetooth</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-buysellads fa-3x buy-sell-ads"></i>
+            </div>
+            <div class="color">
+              <code>buy-sell-ads</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-cc-mastercard fa-3x mastercard"></i>
+            </div>
+            <div class="color">
+              <code>mastercard</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-chrome fa-3x chrome"></i>
+            </div>
+            <div class="color">
+              <code>chrome</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-codepen fa-3x codepen"></i>
+            </div>
+            <div class="color">
+              <code>codepen</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-codiepie fa-3x codie-pie"></i>
+            </div>
+            <div class="color">
+              <code>codie-pie</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-connectdevelop fa-3x connect-develop"></i>
+            </div>
+            <div class="color">
+              <code>connect-develop</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-contao fa-3x contao"></i>
+            </div>
+            <div class="color">
+              <code>contao</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-css3 fa-3x css3"></i>
+            </div>
+            <div class="color">
+              <code>css3</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-dashcube fa-3x dashcube"></i>
+            </div>
+            <div class="color">
+              <code>dashcube</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-delicious fa-3x delicious"></i>
+            </div>
+            <div class="color">
+              <code>delicious</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-deviantart fa-3x deviantart"></i>
+            </div>
+            <div class="color">
+              <code>deviantart</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-digg fa-3x digg"></i>
+            </div>
+            <div class="color">
+              <code>digg</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-cc-diners-club fa-3x diners-club"></i>
+            </div>
+            <div class="color">
+              <code>diners-club</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-cc-discover fa-3x discover"></i>
+            </div>
+            <div class="color">
+              <code>discover</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-dribbble fa-3x dribbble"></i>
+            </div>
+            <div class="color">
+              <code>dribbble</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-dropbox fa-3x dropbox"></i>
+            </div>
+            <div class="color">
+              <code>dropbox</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-drupal fa-3x drupal"></i>
+            </div>
+            <div class="color">
+              <code>drupal</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-edge fa-3x edge"></i>
+            </div>
+            <div class="color">
+              <code>edge</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-empire fa-3x empire"></i>
+            </div>
+            <div class="color">
+              <code>empire</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-envira fa-3x envira"></i>
+            </div>
+            <div class="color">
+              <code>envira</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-expeditedssl fa-3x expeditedssl"></i>
+            </div>
+            <div class="color">
+              <code>expeditedssl</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-facebook-official fa-3x facebook"></i>
+            </div>
+            <div class="color">
+              <code>facebook</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-firefox fa-3x firefox"></i>
+            </div>
+            <div class="color">
+              <code>firefox</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-flickr fa-3x flickr"></i>
+            </div>
+            <div class="color">
+              <code>flickr</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-fonticons fa-3x fonticons"></i>
+            </div>
+            <div class="color">
+              <code>fonticons</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-fort-awesome fa-3x fort-awesome"></i>
+            </div>
+            <div class="color">
+              <code>fort-awesome</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-forumbee fa-3x forumbee"></i>
+            </div>
+            <div class="color">
+              <code>forumbee</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-foursquare fa-3x foursquare"></i>
+            </div>
+            <div class="color">
+              <code>foursquare</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-get-pocket fa-3x get-pocket"></i>
+            </div>
+            <div class="color">
+              <code>get-pocket</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-gg fa-3x gg"></i>
+            </div>
+            <div class="color">
+              <code>gg</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-git fa-3x git"></i>
+            </div>
+            <div class="color">
+              <code>git</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-github fa-3x github"></i>
+            </div>
+            <div class="color">
+              <code>github</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-gitlab fa-3x gitlab"></i>
+            </div>
+            <div class="color">
+              <code>gitlab</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-glide fa-3x glide"></i>
+            </div>
+            <div class="color">
+              <code>glide</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-google fa-3x google"></i>
+            </div>
+            <div class="color">
+              <code>google</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-google-plus fa-3x google-plus"></i>
+            </div>
+            <div class="color">
+              <code>google-plus</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-google-wallet fa-3x google-wallet"></i>
+            </div>
+            <div class="color">
+              <code>google-wallet</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-gratipay fa-3x gratipay"></i>
+            </div>
+            <div class="color">
+              <code>gratipay</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-hacker-news fa-3x hacker-news"></i>
+            </div>
+            <div class="color">
+              <code>hacker-news</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-houzz fa-3x houzz"></i>
+            </div>
+            <div class="color">
+              <code>houzz</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-html5 fa-3x html5"></i>
+            </div>
+            <div class="color">
+              <code>html5</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-instagram fa-3x instagram"></i>
+            </div>
+            <div class="color">
+              <code>instagram</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-internet-explorer fa-3x internet-explorer"></i>
+            </div>
+            <div class="color">
+              <code>internet-explorer</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-ioxhost fa-3x ioxhost"></i>
+            </div>
+            <div class="color">
+              <code>ioxhost</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-cc-jcb fa-3x jcb"></i>
+            </div>
+            <div class="color">
+              <code>jcb</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-joomla fa-3x joomla"></i>
+            </div>
+            <div class="color">
+              <code>joomla</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-jsfiddle fa-3x jsfiddle"></i>
+            </div>
+            <div class="color">
+              <code>jsfiddle</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-lastfm fa-3x lastfm"></i>
+            </div>
+            <div class="color">
+              <code>lastfm</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-leanpub fa-3x leanpub"></i>
+            </div>
+            <div class="color">
+              <code>leanpub</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-linkedin fa-3x linkedin"></i>
+            </div>
+            <div class="color">
+              <code>linkedin</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-linux fa-3x linux"></i>
+            </div>
+            <div class="color">
+              <code>linux</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-maxcdn fa-3x maxcdn"></i>
+            </div>
+            <div class="color">
+              <code>maxcdn</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-meanpath fa-3x meanpath"></i>
+            </div>
+            <div class="color">
+              <code>meanpath</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-medium fa-3x medium"></i>
+            </div>
+            <div class="color">
+              <code>medium</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-mixcloud fa-3x mixcloud"></i>
+            </div>
+            <div class="color">
+              <code>mixcloud</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-modx fa-3x modx"></i>
+            </div>
+            <div class="color">
+              <code>modx</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-odnoklassniki fa-3x odnoklassniki"></i>
+            </div>
+            <div class="color">
+              <code>odnoklassniki</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-opencart fa-3x opencart"></i>
+            </div>
+            <div class="color">
+              <code>opencart</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-openid fa-3x openid"></i>
+            </div>
+            <div class="color">
+              <code>openid</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-opera fa-3x opera"></i>
+            </div>
+            <div class="color">
+              <code>opera</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-optin-monster fa-3x optinmonster"></i>
+            </div>
+            <div class="color">
+              <code>optinmonster</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-pagelines fa-3x pagelines"></i>
+            </div>
+            <div class="color">
+              <code>pagelines</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-paypal fa-3x paypal"></i>
+            </div>
+            <div class="color">
+              <code>paypal</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-pied-piper fa-3x pied-piper"></i>
+            </div>
+            <div class="color">
+              <code>pied-piper</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-pinterest fa-3x pinterest"></i>
+            </div>
+            <div class="color">
+              <code>pinterest</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-product-hunt fa-3x product-hunt"></i>
+            </div>
+            <div class="color">
+              <code>product-hunt</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-qq fa-3x qq"></i>
+            </div>
+            <div class="color">
+              <code>qq</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-rebel fa-3x rebel"></i>
+            </div>
+            <div class="color">
+              <code>rebel</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-reddit fa-3x reddit"></i>
+            </div>
+            <div class="color">
+              <code>reddit</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-renren fa-3x renren"></i>
+            </div>
+            <div class="color">
+              <code>renren</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-safari fa-3x safari"></i>
+            </div>
+            <div class="color">
+              <code>safari</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-scribd fa-3x scribd"></i>
+            </div>
+            <div class="color">
+              <code>scribd</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-sellsy fa-3x sellsy"></i>
+            </div>
+            <div class="color">
+              <code>sellsy</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-share-alt fa-3x share-alt"></i>
+            </div>
+            <div class="color">
+              <code>share-alt</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-shirtsinbulk fa-3x shirts-in-bulk"></i>
+            </div>
+            <div class="color">
+              <code>shirts-in-bulk</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-simplybuilt fa-3x simplybuilt"></i>
+            </div>
+            <div class="color">
+              <code>simplybuilt</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-skyatlas fa-3x skyatlas"></i>
+            </div>
+            <div class="color">
+              <code>skyatlas</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-skype fa-3x skype"></i>
+            </div>
+            <div class="color">
+              <code>skype</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-slack fa-3x slack"></i>
+            </div>
+            <div class="color">
+              <code>slack</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-slideshare fa-3x slideshare"></i>
+            </div>
+            <div class="color">
+              <code>slideshare</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-snapchat fa-3x snapchat"></i>
+            </div>
+            <div class="color">
+              <code>snapchat</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-soundcloud fa-3x soundcloud"></i>
+            </div>
+            <div class="color">
+              <code>soundcloud</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-spotify fa-3x spotify"></i>
+            </div>
+            <div class="color">
+              <code>spotify</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-stack-exchange fa-3x stack-exchange"></i>
+            </div>
+            <div class="color">
+              <code>stack-exchange</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-stack-overflow fa-3x stack-overflow"></i>
+            </div>
+            <div class="color">
+              <code>stack-overflow</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-steam fa-3x steam"></i>
+            </div>
+            <div class="color">
+              <code>steam</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-cc-stripe fa-3x stripe"></i>
+            </div>
+            <div class="color">
+              <code>stripe</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-stumbleupon fa-3x stumbleupon"></i>
+            </div>
+            <div class="color">
+              <code>stumbleupon</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-tencent-weibo fa-3x tencent-weibo"></i>
+            </div>
+            <div class="color">
+              <code>tencent-weibo</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-trello fa-3x trello"></i>
+            </div>
+            <div class="color">
+              <code>trello</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-tripadvisor fa-3x tripadvisor"></i>
+            </div>
+            <div class="color">
+              <code>tripadvisor</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-tumblr fa-3x tumblr"></i>
+            </div>
+            <div class="color">
+              <code>tumblr</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-twitch fa-3x twitch"></i>
+            </div>
+            <div class="color">
+              <code>twitch</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-twitter fa-3x twitter"></i>
+            </div>
+            <div class="color">
+              <code>twitter</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-usb fa-3x usb"></i>
+            </div>
+            <div class="color">
+              <code>usb</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-viacoin fa-3x viacoin"></i>
+            </div>
+            <div class="color">
+              <code>viacoin</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-viadeo fa-3x viadeo"></i>
+            </div>
+            <div class="color">
+              <code>viadeo</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-vimeo fa-3x vimeo"></i>
+            </div>
+            <div class="color">
+              <code>vimeo</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-vine fa-3x vine"></i>
+            </div>
+            <div class="color">
+              <code>vine</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-cc-visa fa-3x visa"></i>
+            </div>
+            <div class="color">
+              <code>visa</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-vk fa-3x vk"></i>
+            </div>
+            <div class="color">
+              <code>vk</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-wechat fa-3x wechat"></i>
+            </div>
+            <div class="color">
+              <code>wechat</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-weibo fa-3x weibo"></i>
+            </div>
+            <div class="color">
+              <code>weibo</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-whatsapp fa-3x whatsapp"></i>
+            </div>
+            <div class="color">
+              <code>whatsapp</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-wikipedia-w fa-3x wikipedia"></i>
+            </div>
+            <div class="color">
+              <code>wikipedia</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-windows fa-3x windows"></i>
+            </div>
+            <div class="color">
+              <code>windows</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-wordpress fa-3x wordpress"></i>
+            </div>
+            <div class="color">
+              <code>wordpress</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-wpbeginner fa-3x wp-beginner"></i>
+            </div>
+            <div class="color">
+              <code>wp-beginner</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-wpforms fa-3x wp-forms"></i>
+            </div>
+            <div class="color">
+              <code>wp-forms</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-xing fa-3x xing"></i>
+            </div>
+            <div class="color">
+              <code>xing</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-y-combinator fa-3x y-combinator"></i>
+            </div>
+            <div class="color">
+              <code>y-combinator</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-yahoo fa-3x yahoo"></i>
+            </div>
+            <div class="color">
+              <code>yahoo</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-yelp fa-3x yelp"></i>
+            </div>
+            <div class="color">
+              <code>yelp</code>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 text-center">
+            <div class="icon">
+              <i class="fa fa-youtube fa-3x youtube"></i>
+            </div>
+            <div class="color">
+              <code>youtube</code>
+            </div>
+          </div>
+      </div>
+    </section>
+
+
+    <footer class="text-center">
+      <div class="container">
+        <p>Made with <i class="fa fa-hand-paper-o"></i> by <a href="https://github.com/pedrodj46" target="_blank"><em>pedrodj46</em></a></p>
+      </div>
+    </footer>
 
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
